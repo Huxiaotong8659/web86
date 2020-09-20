@@ -1,0 +1,35 @@
+<html>
+    <head>
+        <style>
+            #name{
+                background-color: lightcoral;
+                font-size: 30px;
+            }
+        </style>
+    </head>
+    <body>
+        <p id=name>江西软件职业技术大学官网</p>
+        <button id="btn1" type="submit">提交</button>
+        <script>
+            var target=document.getElementById("btn1");
+            target.onclick=function(){
+            alert("我被点击了！");
+            }
+            document.body.onmouseenter=function(){
+                console.log("鼠标移动了！");
+            }
+            document.body.onmouseenter=function(){
+                console.log("鼠标进来了！");
+            }
+            document.body.onkeydown=function(){
+                console.log("键盘被按下");
+            }
+            document.body.onkeydown=function(){
+                console.log("键盘弹起!");
+            }
+            document.body.onkeypress =function(){
+                console.log("键盘被再按一次！");
+            }
+        </script>
+    </body>
+</html>
