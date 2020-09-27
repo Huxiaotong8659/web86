@@ -1,0 +1,40 @@
+<html>
+    <head>
+        <style>
+            #box1{
+                background-color: goldenrod;
+                width:80px;
+                height:80px;
+                position:absolute;
+                left:100px;
+            }
+            
+        </style>
+    </head>
+    <body>
+       <div id="box1" class="boxclass">
+
+       </div>
+       <br>
+       <br>
+       <br>
+       <br>
+       <br>
+       <div>
+          <input type="button" id="btn1" value="移动">
+       </div>
+       <script>
+           var target=document.getElementById("btn1");
+           target.onclick=function(){
+               var box1=document.getElementById("box1").style.top;
+               var box2=document.getElementById("box1").style.left;
+               box1=box1.replace("px","")
+               box2=box2.replace("px","")
+               box1=Number(box1)+5;
+               box2=Number(box2)+5;
+               document.getElementById("box1").style.top=box1+"px";
+               document.getElementById("box1").style.left=box1+"px";
+           }
+       </script>
+    </body>
+</html>
