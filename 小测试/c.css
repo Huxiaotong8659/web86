@@ -1,0 +1,75 @@
+body{
+    margin:0;
+    padding:0;
+    background:#000000;
+    font-family:"宋体";
+    font-size:12px;
+    color:#333333;
+    line-height:150%;
+}
+a{
+    color:#f5651f;
+}
+a:hover{
+    color:#ff3399;
+}
+ul{
+    margin:0;
+    padding:0;
+}
+ul li{
+    list-style:none;
+}
+.clear{
+    clear:both;
+}
+#banner{
+    margin:0;
+    margin-left: auto;
+    margin-right: auto;
+    width:993px;
+    height:319px;
+    background: url(../小测试/23.jpg)no-repeat left top;
+}
+#mmbanner{
+    padding: 10px 0 0 85px;
+}
+#title{
+    float:left;
+}
+#title a{
+    font-size: 16px;
+    font-weight: bold;
+    color:#ffffff;
+    text-decoration: none;
+}
+#title a:hover{
+    color:#f5651f;
+}
+#url{
+    float:left;
+}
+#url a{
+    margin:0 0 0 16px;
+    color:#ffffff;
+}
+#url a:hover{
+    color:#f5651f;
+}
+#desc{
+    clear:left;
+    margin:5px 0 0 20px;
+    color:#ffffff;
+}
+#menu{
+    margin-left: auto;
+    margin-right: auto;
+    width:993ox;
+    height:166px;
+    background:url(../小测试/11.jpg)no-repeat left top;
+}
+#mmmennu{
+    float:right;
+    width:500px;
+    margin:10px 0 0 0;
+}
