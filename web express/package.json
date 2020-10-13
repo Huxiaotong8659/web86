@@ -1,0 +1,22 @@
+{
+  "name": "express6",
+  "version": "1.0.0",
+  "description": "表单提交数据",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Huxiaotong8659/express6.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Huxiaotong8659/express6/issues"
+  },
+  "homepage": "https://github.com/Huxiaotong8659/express6#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
