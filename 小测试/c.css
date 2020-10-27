@@ -29,7 +29,7 @@ ul li{
     margin-right: auto;
     width:993px;
     height:319px;
-    background: url(../小测试/23.jpg)no-repeat left top;
+    background: url(../小测试/images/23.jpg)no-repeat left top;
 }
 #mmbanner{
     padding: 10px 0 0 85px;
@@ -66,10 +66,67 @@ ul li{
     margin-right: auto;
     width:993ox;
     height:166px;
-    background:url(../小测试/11.jpg)no-repeat left top;
+    background:url(../小测试/images/11.jpg)no-repeat left top;
 }
 #mmmennu{
     float:right;
     width:500px;
     margin:10px 0 0 0;
+}
+#mainnav{
+    float:left;
+}
+#mainnav li{
+    float:left;
+    list-style:none;
+    padding:48px 0 0;
+}
+#mainnav li a{
+    padding:48px 12px 0;
+    background-position: center top;
+    background-repeat: no-repeat;
+    color:#e7ebef;
+    text-decoration: none;
+}
+#mainnav li a:hover{
+    color:#f5651f;
+    background: none;
+}
+#mian{
+    margin:0 auto;
+    width:993px;
+    height:auto;
+    background: url(../小测试/images/11.jpg) repeat-y left top;
+}
+#content{
+    float:left;
+    width:505px;
+    padding:0 20px 5px 132px;
+}
+#sidebar{
+    float:right;
+    width:196px;
+    padding-right:132px;
+}
+.mmcontent{
+    width:495px;
+    float:left;
+}
+.content-top{
+    width:100%;
+    padding:5px;
+    border-bottom: #666666 1px solid;
+}
+.diarytitle{
+    width:100%;
+    color:#821428;
+    font-size:16px;
+    font-weight:bold;
+    padding:5px;
+    border-bottom: 1px dashed #821428;
+}
+.arrow-up{
+    height:11px;
+    width:11px;
+    cursor:pointwe;
 }

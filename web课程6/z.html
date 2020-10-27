@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>绝对定位4</title>
+    <style>
+        body{
+            background-color: hotpink;
+        }
+        .wrapper{
+            background-color: lightseagreen;
+            height:300px;
+            width:800px;
+            /* position:absolute;
+            left:200px;
+            top:30px; */
+            /* margin:300px 300px 300px 300px;   */
+            /* margin中的值分别是上、右、下、左 */
+            margin:150px;
+            position:relative;
+            }
+        .parent1{
+            background-color: magenta;
+            width:150px;
+            height:150px;
+            display:inline-block;
+            margin:30px;
+            position:relative;
+        }    
+        .parent2{
+            background-color: moccasin;
+            width:150px;
+            height:150px;
+            display:inline-block;
+            margin:30px;
+        }
+        /* 绝对定位 */
+        .son1{
+            background-color: palegreen;
+            width:30px;
+            height:30px;
+            position:absolute;
+            top:30px;
+        }
+        /* 相对定位 */
+        .son2{
+            background-color:salmon;
+            width:30px;
+            height:30px;
+            position:relative;
+            top:30px;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="parent1">
+            <div class="son1"></div>
+        </div>
+        <div class="parent2">
+            <div class="son2"></div>
+        </div>
+    </div>
+</body>
+</html>
