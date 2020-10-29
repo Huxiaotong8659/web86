@@ -3,7 +3,7 @@ body{
     padding:0;
     background:#000000;
     font-family:"宋体";
-    font-size:12px;
+    font-size:14px;
     color:#333333;
     line-height:150%;
 }
@@ -64,11 +64,11 @@ ul li{
 #menu{
     margin-left: auto;
     margin-right: auto;
-    width:993ox;
+    width:993px;
     height:166px;
     background:url(../小测试/images/11.jpg)no-repeat left top;
 }
-#mmmennu{
+#mmmenu{
     float:right;
     width:500px;
     margin:10px 0 0 0;
@@ -92,7 +92,19 @@ ul li{
     color:#f5651f;
     background: none;
 }
-#mian{
+.navhome{
+    background-image: url(../小测试/images/home.jpg);
+}
+.navblog{
+    background-image: url(../小测试/images/blog.jpg);
+}
+.navphoto{
+    background-image: url(../小测试/images/photo.jpg);
+}
+.navmusic{
+    background-image: url(../小测试/images/music.jpg);
+}
+#main{
     margin:0 auto;
     width:993px;
     height:auto;
@@ -128,5 +140,124 @@ ul li{
 .arrow-up{
     height:11px;
     width:11px;
-    cursor:pointwe;
+    cursor:pointer;
+}
+.diarycontent{
+    width:100%;
+    color:#333333;
+    padding:8px 0 15px 0;
+}
+.diaryabout{
+    width:100%;
+    color:#821428;
+    padding:5px;
+}
+#mmsidebar{
+    width:190px;
+}
+.list{
+    margin-bottom:5px;
+    clear:both;
+}
+.list-title{
+    color:#A31731;
+    height:20px;
+    margin-left:15px;
+    padding:15px 0 10px 0;
+}
+.list-title img{
+    margin-right: 5px;
+}
+.list-title h1{
+    float:left;
+    margin:0px;
+    padding:30px 0 0 5px;
+    font-size:14px;
+    font-weight:bold;
+}
+.list-content{
+    clear:both;
+    margin:0 5px 0 15px;
+    color:#a6c934;
+}
+.list-content a{
+    color:#b2e243;
+    text-decoration: none;
+}
+.list-content a:hover{
+    color:#f5651f;
+}
+.mm-list-content{
+    text-align: center;
+}
+.list-content hr{
+    margin:5px 0px;
+    height:1px;
+    border-top:1px solid #97ACB6;
+    clear:both;
+}
+.list-content ul{
+    padding:0;
+    margin:0;
+    width:100%;
+}
+.list-content li{
+    list-style: none;
+}
+.collect{
+    float:left;
+    width:50px;
+    margin:0 5px 5px 0;
+}
+.collect img{
+    width:48px;
+    height:48px;
+    border:1px solid #cccccc;
+}
+.collect span{
+    display:block;
+    width:48px;
+    height:20px;
+    cursor:hand;
+}
+#footer{
+    margin:0 auto;
+    width:993px;
+    background:url(../小测试/images/13.jpg)no-repeat left top;
+    height:191px;
+}
+#mmfooter{
+    padding-top: 120px;
+    height:71px;
+}
+.logo{
+    float:left;
+    width:360px;
+    height:40px;
+}
+.logo img{
+    float:right;
+    margin-top:4px;
+}
+.contact{
+    float:left;
+    color:#e7ebef;
+    height:40px;
+    padding-left:20px;
+}
+.contact a{
+    color:#e7ebef;
+    font-size:14px;
+    font-family:Arial, Helvetica, sans-serif;
+}
+.contact a:hover{
+    color:#f5651f;
+    font-size:14px;
+}
+#copyright{
+    clear:left;
+    margin:0 auto;
+    width:890px;
+    color:#e7ebef;
+    text-align:center;
 }
