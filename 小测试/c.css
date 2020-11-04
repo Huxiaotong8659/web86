@@ -104,6 +104,18 @@ ul li{
 .navmusic{
     background-image: url(../小测试/images/music.jpg);
 }
+.navprofile{
+    background-image: url(../小测试/images/profile.jpg);
+}
+.navvideo{
+    background-image: url(../小测试/images/video.jpg);
+}
+.navfriend{
+    background-image: url(../小测试/images/friend.jpg);
+}
+.navres{
+    background-image: url(../小测试/images/res.jpg);
+}
 #main{
     margin:0 auto;
     width:993px;
