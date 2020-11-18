@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link id="myStyle" rel="stylesheet" href="./abe1.css">
+   
+</head>
+<body>
+    <div id="main"></div>
+    <br/>
+    <br/>
+    <button id="myButton">换肤</button>
+    <script>
+        var buttonTarget = window.document.getElementById("myButton");
+        buttonTarget.onclick = function target(){
+            var linkTarget = document.getElementById("myStyle");
+            linkTarget.href = "abe2.css";
+        }
+        var change = function(){
+            var linkTarget = document.getElementById("myStyle");
+            linkTarget.href = "abe2.css";
+        }
+        setTimeout(function(){
+            var linkTarget = document.getElementById("myStyle");
+            linkTarget.href = "abe2.css";
+        },2000)
+    </script>
+</body>
+</html>
