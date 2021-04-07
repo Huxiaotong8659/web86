@@ -23,7 +23,9 @@ for(var o in obj){
 }
 //过滤是否属于自己的属性
 for(const key in object){
-    if(Object.hasOwnProperty.c)
+    if(Object.hasOwnProperty.c){
+        
+    }
 }
 
 
@@ -65,3 +67,38 @@ console.log(result7);
 var result8 = name6.lastIndexOf("software");
 console.log(result8);
 console.log(name6.length)
+
+//字符串替换
+var name7 = "software,jiangxi,software,university";
+var result9 = name7.replace("software","hardware").replace("software","hardware");
+console.log(result9);
+
+//查找给定位置的字符
+var name8 = "apple";
+let result10 = name8.charAt(0);
+console.log(result10);
+//ASCLL码  a:97 b:98
+let result11 = name8.charCodeAt(0);
+console.log(result11);
+
+//字符串链接
+//字符串拼接
+var name9 = "apple";
+var name10 = "orange";
+var name11 = name9 + name10;
+var name12 = name9.concat(name10);
+
+//字符串切割和提取
+var name13 = "apple,orange,peach,melon";
+var result13 = name13.slice(1,5);//这里的 5 是指下标为 5 的前面
+console.log(result13);
+var result14 = name13.substring(1,5);
+console.log(result14);
+var result15 = name13.substr(1,5);//这里的 5 是指长度
+console.log(result15);
+
+//写一个getSuffix函数，用于获得输入参数的后缀名，例如输入jiangxi.doc
+function geySuffix(fileName){
+    return fileName.substr(fileName.indexof(".") + 1,3)
+}
+console.log(getSuffix("abc.doc"))

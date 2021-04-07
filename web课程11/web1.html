@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>动画</title>
+    <style>
+        #wrapper{
+            background-color: fuchsia;
+            width:100px;
+            height:100px;
+            /* animation:my 5s infinite; */
+            position:relative;
+        }
+        @keyframes my{
+            10%{
+                background-color: gold;
+                width:300px;
+                height:300px;
+            }
+            40%{
+                background-color: greenyellow;
+                width:400px;
+                height:400px;
+            }
+            60%{
+                background-color: lightpink;
+                width:200px;
+                height:200px;
+            }
+            80%{
+                background-color: mediumspringgreen;
+                width:100px;
+                height:100px;
+                transform:rotatey(120deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="wrapper">
+    </div>
+    <script>
+        var target = document.getElementById("wrapper")
+        //鼠标移动事件
+        window.addEventListener("mousemove",function(event){
+            // console.log("this is moving")
+            // console.log(event.x + " " +event.y)
+            target.style.left = event.clientX + "px"
+            target.style.top = event.clientY + "px"
+        })
+    </script>
+</body>
+</html>
