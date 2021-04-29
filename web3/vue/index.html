@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>新型图书管理系统</title>
+    <script src="vue.js"></script>
+    <link rel="stylesheet" href="/web3/elementui/index.css">
+    <script src="/web3/elementui/index.js"></script>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+        }
+        #indexHeader{
+            background-color: #244152;
+        }
+        /* #indexMain{
+            background-color: cornsilk;
+        }
+        #indexFooter{
+            background-color: cyan;
+        } */
+        #headerTitle{
+            color: ghostwhite;
+            height:100%;
+            width:400px;
+            display:inline-block;
+            /* background-color: hotpink; */
+            line-height:60px;
+            font-size:24px;
+            font-weight:bloder;
+        }
+        #headerFunction{
+            float:right;
+            display:inline-block;
+            /* width:200px; */
+            height:60px;
+            /* background-color:magenta; */
+        }
+        #headerFunction > .el-button{
+            display:inline-block;
+            margin-top:8px;
+            background-color: #0a9588;
+            border-color: #0a9588;
+        }
+        #loginCard{
+            width:400px;
+            margin:0 auto;
+            margin-top:100px;
+        }
+        #loginContent{
+            text-align: center;
+        }
+        #loginContent > *{
+            margin-top:5px;
+        }
+        #loginSystem{
+            background-color: #0a9588;
+            color:aliceblue;
+            width:150px;
+            display:inline-block;
+            
+        }
+        #indexFooter{
+            margin-top: 50px;
+        }
+        #footerContent{
+            text-align: center;
+            font-size: 12px;
+        }
+    </style>
+</head>
+<body>
+    <div id="app">
+        <el-container id="wrapper">
+            <el-header id="indexHeader">
+                <div id="headerTitle">
+                    江西软件大学-图书管理系统
+                </div>
+                <div id="headerFunction">
+                    <el-button type="primary" >系统登录</el-button>
+                    <el-button type="primary" >工作中心</el-button>
+                    <el-button type="primary" >学生信息查询</el-button>
+                    <el-button type="primary" >图书信息查询</el-button>
+                </div>
+            </el-header>
+            <el-main id="indexMain">
+                <el-card class="box-card" id="loginCard">
+                    <div slot="header" class="clearfix">
+                      <span>系统登录</span>
+                      <el-button style="float: right; padding: 3px 0" type="text">找回密码</el-button>
+                    </div>
+                    <div id="loginContent">
+                      <el-input clearable v-model="user.username"></el-input>
+                      <el-input clearable show-password v-model="user.passward"></el-input>
+                      <el-button id="loginSystem">登录</el-button>
+                    </div>
+                  </el-card>
+            </el-main>
+            <el-footer id="indexFooter">
+                <div id="footerContent">
+                    <div id="tip1">
+                        通讯地址:江西省南昌市湾里区罗亭镇江西软件职业技术大学
+                        邮编：330041
+                    </div>
+                    <div id="tip2">
+                        &copy 版权属江西软件大学所有 2020-2021
+                    </div>
+                </div>
+            </el-footer>
+        </el-container>
+    </div>
+    <script>
+        var vm = new Vue({
+            el:"#app",
+            data:{
+                user:{
+                    username:"",
+                    password:"",
+                }
+            }
+        })
+    </script>
+</body>
+</html>
